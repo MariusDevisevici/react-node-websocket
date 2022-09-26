@@ -1,0 +1,100 @@
+.container {
+  width: 50%;
+  margin: auto;
+  margin-top: 5rem;
+  background-color: rgb(233, 89, 113);
+  padding: 5rem 3rem;
+  border-radius: 1rem;
+  box-shadow: 25px 21px 0px rgba(0, 0, 0, 1);
+  border: 0.5rem solid black;
+  transform: rotate(2deg);
+}
+.form {
+}
+
+.form__group {
+  margin-bottom: 1em;
+  transition: all 300ms ease-in-out;
+  width: 70%;
+  margin: auto;
+}
+
+.form__label {
+  font-size: 1.5rem;
+  color: white;
+  display: block;
+  opacity: 1;
+  transform: translateY(-1.5em);
+  transform-origin: 0 0;
+  transition: all 300ms ease-in-out;
+  pointer-events: none;
+}
+
+.form__control {
+  box-shadow: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 5px solid black;
+  width: 100%;
+  transition: all 300ms ease-in-out;
+  padding: 0.2rem;
+  color: rgb(255, 255, 255);
+}
+.form__control::placeholder {
+  color: transparent;
+}
+
+.form__control:focus {
+  box-shadow: none;
+  outline: none;
+  border-bottom: 5px solid;
+  border-color: #fbff17;
+}
+
+.form__control:focus + .form__label,
+.form__control:not(:placeholder-shown) + .form__label {
+  transform: translateY(-2.5em) scale(0.8);
+}
+.form__group:focus-within {
+  transform: scale(1.05, 1.05);
+}
+
+.form .error {
+  color: rgb(255, 0, 0);
+  background-color: rgb(69, 243, 121);
+  width: fit-content;
+  margin: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.form__button {
+  border: none;
+  font-size: 1.2rem;
+  display: block;
+  margin: auto;
+  font-weight: bold;
+  color: #000000;
+  border: 2px solid black;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
+
+  cursor: pointer;
+  background-color: rgb(86, 139, 255);
+  border-radius: 0.2rem;
+  padding: 0.2rem 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .form__group {
+    width: 100%;
+  }
+
+  .form__button {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+} ;

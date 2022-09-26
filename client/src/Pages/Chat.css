@@ -1,0 +1,145 @@
+/* .chat__messages {
+  width: 50%;
+  height: 35rem;
+  overflow-y: scroll;
+  margin: auto;
+  margin-top: 5rem;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem 3rem;
+  box-shadow: 25px 21px 0px rgba(0, 0, 0, 1);
+  border: 0.5rem solid black;
+  border-radius: 1rem;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+/* .chat__messages {
+  scrollbar-width: auto;
+  scrollbar-color: #8f54a0 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+/*.chat__messages::-webkit-scrollbar {
+  width: 16px;
+}
+
+.chat__messages::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.chat__messages::-webkit-scrollbar-thumb {
+  background-color: rgb(173, 4, 252);
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+
+.chat__form .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+}
+
+.chat__form .form input {
+  border: 5px solid #ad04fc;
+  padding: 1rem;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.chat__form .form input:focus {
+  outline: none;
+}
+
+.chat__form button {
+  display: inline-flex;
+  padding: 1rem;
+  background-color: rgb(173, 4, 252);
+  border: 1px solid rgb(173, 4, 252);
+  border-radius: 0 1rem 1rem 0;
+  cursor: pointer;
+}
+.chat__username {
+  color: rgb(177, 177, 177);
+}
+.chat__messages {
+  color: rgb(105, 7, 161);
+  word-wrap: break-word;
+}
+.chat {
+  background-image: url("../../public/blob.svg");
+  background-repeat: no-repeat;
+  background-position: 15%;
+} */
+
+.chat {
+  position: relative;
+  width: 100%;
+}
+
+.chat__messages {
+  width: 16rem;
+  position: absolute;
+  z-index: 999;
+  top: -1.5rem;
+  right: 1rem;
+  height: 30rem;
+  padding: 1rem;
+  overflow-y: scroll;
+  background: rgb(255, 255, 255);
+  word-break: break-all;
+  border: 1px solid rgb(209, 203, 203);
+  border-radius: 2rem;
+}
+
+.chat__messages {
+  scrollbar-width: 5px;
+  scrollbar-color: #8f54a0 #ffffff;
+}
+
+.chat__messages::-webkit-scrollbar {
+  width: 5px;
+}
+
+.chat__messages::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 1rem;
+  height: 2rem;
+}
+
+.chat__messages::-webkit-scrollbar-thumb {
+  background-color: rgb(173, 4, 252);
+  border-radius: 10px;
+}
+.chat__messages::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 2rem;
+}
+.chat__messages::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 1.4rem;
+}
+
+.chat__form .form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 1rem;
+}
+
+.chat__form .form input {
+  width: 100%;
+}
+.chat__form .form button {
+  border: none;
+  display: flex;
+  background-color: white;
+  color: #000000;
+  cursor: pointer;
+}
+
+.chat__username {
+  color: rgb(139, 138, 139);
+}
